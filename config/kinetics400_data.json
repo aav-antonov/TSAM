@@ -1,0 +1,17 @@
+
+{
+	"help": "comment text goes here...",
+
+
+	"dataset": {
+		"name": "k400",
+		"data_dir": "/localstore/LocalUsers/alexey/kinetics/k400/",
+		"dir_videos": "videos",
+		"dir_frames": "frames_fps",
+		"dir_audios": "audios",
+		"file_train_list": "training.txt",
+		"file_val_list": "validation.txt",
+		"frames_tmpl": "{:06d}.jpg"
+	}
+
+}

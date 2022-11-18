@@ -1,0 +1,37 @@
+
+{
+	"help": "comment text goes here...",
+
+	"data_augmentation": {
+			"video_image_param": { "input_size" : 256 , "output_size": 224},
+			"video_augmentation": {"RandomHorizontalFlip": true, "scales": [1, 0.875, 0.75, 0.66], "ColorJitter": true, "RandomGrayscale": 0.2, "GaussianBlur":false},
+			"audio_image_param": {"window_sizes": [25, 50, 100], "hop_sizes": [10, 25, 50], "n_mels": 224, "eps": 1e-6, "spec_size": [3, 224, 224], "num_segments": 1, "m_segments": 1},
+			"audio_augmentation": {"status":true, "random_shift_waveform": [1.0, 1.0]}
+	},
+
+	"model": {
+		"video_segments": 16,
+		"audio_segments": 1,
+		"arch": "resnet50_timm",
+		"pretrain": "imagenet",
+		"dropout": 0.5
+
+	},
+
+	"shift_temporal": {
+		"status": true,
+		"f_div": 4,
+		"shift_depth": 4,
+		"n_insert": 2,
+		"m_insert": 0
+	},
+
+
+    "training_param": {"epochs": 50, "batch_size": 64, "num_workers": 20},
+	"optimizer_param": {"lr": 5.0e-2, "lr_decay": [0.2, 5, 0.01, 30, 0.002,45], "momentum":  0.9, "gd": 20 ,"weight_decay": 1e-4},
+
+
+    "save_epoch": [90],
+	"results_folder": "results"
+
+}

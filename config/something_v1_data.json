@@ -1,0 +1,16 @@
+
+{
+	"help": "comment text goes here...",
+
+	"dataset": {
+		"name": "something_v1",
+		"data_dir": "/localstore/LocalUsers/alexey/something/v1/",
+		"dir_videos": "videos",
+		"dir_frames": "frames",
+		"dir_audios": "audios",
+		"file_train_list": "training.txt",
+		"file_val_list": "validation.txt",
+		"frames_tmpl": "{:05d}.jpg"
+	}
+
+}

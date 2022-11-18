@@ -1,0 +1,17 @@
+
+{
+	"help": "comment text goes here...",
+
+
+	"dataset": {
+		"name": "test",
+		"data_dir": "example/videos4test",
+		"dir_videos": "videos",
+		"dir_frames": "frames",
+		"dir_audios": "audios",
+		"file_train_list": "training.txt",
+		"file_val_list": "validation.txt",
+		"frames_tmpl": "{:05d}.jpg"
+	}
+
+}
