@@ -139,7 +139,7 @@ To validate or predict the pretrained model you need to specify Input Data path 
 (use template from  [config/kinetics400_data.json](config/kinetics400_data.json)).
 
 
-To run in multisampling mode (pretrained on kinetics400) :
+To run validation in MultiClip mode (pretrained on kinetics400) :
 
 ```bash
 # test kinetics400
@@ -180,6 +180,14 @@ To train  your model on your data you need to specify Input Data path in the dat
 ```bash
 # to train on kinetics dataset: 
 python main.py --data config/kinetics400_data.json --config config/kinetics400_config.json --device 0,1,2,4 --run_id "MyRunId"
+
+#the path to output is specified in config folder: "results_folder": "results"
+# so the results folder is "results/MyRunId"    
+```
+
+```bash
+# to run example train on toy dataset (you need to frame videos before  (see above "Framing Videos")): 
+python main.py --data config/example_data.json --config config/example_config.json --device 0,1,2,4 --run_id "MyRunId"
 
 #the path to output is specified in config folder: "results_folder": "results"
 # so the results folder is "results/MyRunId"    
