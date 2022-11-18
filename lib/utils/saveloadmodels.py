@@ -14,10 +14,8 @@ def WeightsData():
 
     model_pretrained_param = {}
     model_pretrained_param["resnet50_miil_21k"] = ["net_weigths/resnet50_miil_21k.pth", "https://bitbucket.org/AlexeyAntonov74/resnet50_pretrained_weights/raw/cc2bc64184212a0c0b710ab27f78b54ec7c06adb/resnet50_miil_21k.pth"]
-    model_pretrained_param["resnet50_kinetics400"] = ["net_weigths/resnet50_kinetics400.ckpt.pth.tar",
-                                                   "https://bitbucket.org/AlexeyAntonov74/resnet50_pretrained_weights/raw/cc2bc64184212a0c0b710ab27f78b54ec7c06adb/resnet50_kinetics400.ckpt.pth.tar"]
-    model_pretrained_param["resnet50_something_v1"] = ["net_weigths/resnet50_something_v1.tar",
-                                                   "https://bitbucket.org/AlexeyAntonov74/resnet50_pretrained_weights/raw/cc2bc64184212a0c0b710ab27f78b54ec7c06adb/resnet50_something_v1.tar"]
+    model_pretrained_param["resnet50_kinetics400"] = ["net_weigths/resnet50_kinetics400.ckpt.pth.tar","https://bitbucket.org/AlexeyAntonov74/resnet50_pretrained_weights/raw/cc2bc64184212a0c0b710ab27f78b54ec7c06adb/resnet50_kinetics400.ckpt.pth.tar"]
+    model_pretrained_param["resnet50_something_v1"] = ["net_weigths/resnet50_something_v1.tar","https://bitbucket.org/AlexeyAntonov74/resnet50_pretrained_weights/raw/cc2bc64184212a0c0b710ab27f78b54ec7c06adb/resnet50_something_v1.tar"]
 
     return model_pretrained_param
 

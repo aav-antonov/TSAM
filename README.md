@@ -4,7 +4,7 @@
 ## Overview
 This code extends the [TemporalShiftModule](https://github.com/mit-han-lab/temporal-shift-module) codebase. 
 
-We have implemented several extensions to adapt TSAM for general purpose video undestanding (including emotion recognition):
+We have implemented several extensions to adapt TSAM for general purpose video undestanding ([including emotion recognition](Adcumen.pdf)):
 
 
 - incorporates audio modality
