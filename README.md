@@ -11,12 +11,12 @@ We have implemented several extensions to adapt TSAM for general purpose video u
 - extends shift with depth parameter (shift not only neighboring but distant frames )
 - use weigths ptretrained with INET21K
 
-All this improves perfomance of TSM on kinetics400 and something-something-v1 datasets.
+All this improves perfomance of TSM on kinetics400 and something-something-v1 datasets:
 
 | method          | n-frame      | Kinetics Acc. | something-v1 Acc. |
 | --------------- | ------------ | ------------- | ------------- |
 | TSM-ResNet50    | 16 * 10clips |     74.5%     |     48.4     |
-| TSAM-ResNet50  | 16 * 10clips  | **78.0%**     | **52.2%**     |
+| **TSAM-ResNet50** | **16 * 10clips**  | **78.0%**     | **52.2%**     |
 
 
 Figures below describe our extensions, more details could be found in the [technical report](TSAM.pdf).
