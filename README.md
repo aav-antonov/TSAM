@@ -13,12 +13,16 @@ We have implemented several extensions to adapt TSAM for general purpose video u
 
 All this improves perfomance of TSM on kinetics400 and something-something-v1 datasets:
 
-| method          | n-frame      | Kinetics Acc. | something-v1 Acc. |
-| --------------- | ------------ | ------------- | ------------- |
-| TSM-ResNet50    | 16 * 10clips |     74.5%     |     48.4     |
-| **TSAM-ResNet50** | **16 * 10clips**  | **78.0%**     | **52.2%**     |
+
+| dataset      | n-frame      | TSM   | **TSAM**  |
+|--------------|--------------|-------|-----------|
+| Kinetics 400 | 16 * 10clips | 74.5% | **78.0%** |
+| something-v1 | 16 * 10clips | 48.4% | **52.2%** |
+
+##### Table 1. Perfomance on public dataset TSAM vs TSM. In both cases Resnet50 was used as backbone. 
 
 
+## TSAM vs TSM
 Figures below describe our extensions, more details could be found in the [technical report](TSAM.pdf).
 
 
